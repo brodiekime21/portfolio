@@ -11,9 +11,12 @@ const Navbar = () => {
 
             <div className="flex items-center font-bold">
                 <NavLink to={'/'} exact activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white">Home</NavLink>
-                <NavLink to={'/browse-samples'} activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">Browse Samples</NavLink>
-                <NavLink to={'/browse-packs'} activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">Browse Packs</NavLink>
-                {/* <SearchBar /> */}
+                <NavLink to={'/projects'} activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">Projects</NavLink>
+                <NavLink to={'/about'} activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">About</NavLink>
+                <NavLink to={'/contact'} activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">Contact</NavLink>
+                <a href='https://www.linkedin.com/in/brodie-kime/' activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">LinkedIn</a>
+                <a href='https://github.com/brodiekime21' activeClassName="text-white" className="mr-6 text-xl text-purple-600 hover:text-white ">Github</a>
+
 
             </div>
 
