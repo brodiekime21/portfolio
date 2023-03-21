@@ -11,13 +11,13 @@ const Navbar = () => {
 
             <div className="flex items-center justify-between font-bold">
                 <div className="">
-                <NavLink to={'/'} exact activeClassName="text-white" className="mr-6 text-2xl hover:text-white">Home</NavLink>
-                <NavLink to={'/projects'} activeClassName="text-white" className="mr-6 text-2xl hover:text-white ">Projects</NavLink>
-                <NavLink to={'/about'} activeClassName="text-white" className="mr-6 text-2xl hover:text-white ">About</NavLink>
-                <NavLink to={'/contact'} activeClassName="text-white" className="mr-6 text-2xl hover:text-white ">Contact</NavLink>
+                <NavLink to={'/'} exact activeClassName="text-white" className="mr-6 text-2xl hover:text-white focus:outline-none focus:ring focus:ring-white">Home</NavLink>
+                <NavLink to={'/projects'} activeClassName="text-white" className="mr-6 text-2xl hover:text-white focus:outline-none focus:ring focus:ring-white ">Projects</NavLink>
+                <NavLink to={'/about'} activeClassName="text-white" className="mr-6 text-2xl hover:text-white focus:outline-none focus:ring focus:ring-white ">About</NavLink>
+                <NavLink to={'/contact'} activeClassName="text-white" className="mr-6 text-2xl hover:text-white focus:outline-none focus:ring focus:ring-white">Contact</NavLink>
                 </div>
-                <a href='https://www.linkedin.com/in/brodie-kime/' activeClassName="text-white" className="mr-6 text-l hover:text-white ">LinkedIn</a>
-                <a href='https://github.com/brodiekime21' activeClassName="text-white" className="mr-6 text-l hover:text-white ">Github</a>
+                <a href='https://www.linkedin.com/in/brodie-kime/' activeClassName="text-white" className="mr-6 text-l hover:text-white focus:outline-none focus:ring focus:ring-white">LinkedIn</a>
+                <a href='https://github.com/brodiekime21' activeClassName="text-white" className="mr-6 text-l hover:text-white focus:outline-none focus:ring focus:ring-white ">Github</a>
             </div>
 
         </nav>

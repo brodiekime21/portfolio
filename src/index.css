@@ -8,6 +8,7 @@
 }
 
 body {
+  color: white;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -25,4 +26,30 @@ code {
 
 .logo-hover:hover {
   filter: brightness(0) invert(1);
+}
+
+.download {
+  background-color: #4adedd;
+  color: #081427;
+  border: 2px solid #081427;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+
+.download:hover {
+  background-color: #081427;
+  color: #4adedd;
+  border: 2px solid #4adedd;
+}
+
+.boxes{
+  background-color: rgba(255, 255, 255, 0.55);
+  padding: 20px;
+  border-radius: 15px;
 }
