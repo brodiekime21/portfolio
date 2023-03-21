@@ -2,7 +2,7 @@ function Contact() {
 
 
     return (
-      <h1>Contact Page</h1>
+      <h1>Cyour name, email address, and phone number</h1>
     );
     
   }
