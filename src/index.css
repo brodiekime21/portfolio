@@ -5,6 +5,7 @@
 .navbar {
   background-color: #081427;
   color: #4adedd;
+  margin-bottom: 50px;
 }
 
 body {
@@ -55,14 +56,52 @@ code {
   text-align: center;
 }
 
+.boxes-about{
+  background-color: rgba(255, 255, 255, 0.55);
+  padding: 5px;
+  border-radius: 15px;
+}
+
 h1 {
   font-size: 48px;
   margin: 0;
   padding: 20px;
+  text-align: center;
 }
 
 .text-gradient {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.about-content > div {
+  flex-basis: 40%;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-box {
+  border: 2px solid #ccc;
+  padding: 20px;
 }

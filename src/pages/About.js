@@ -1,8 +1,8 @@
 function About() {
   return (
-    <div>
-      <h1>About Me</h1>
-      <div>
+    <div className="boxes-about about-container">
+      <h1 className="font-bold">About Me</h1>
+      <div className="about-box text-l">
         <div>
           <p>
             - Recent graduate from the Ironhack Web Developer Bootcamp with a
@@ -28,7 +28,8 @@ function About() {
             continue learning daily
           </p>
         </div>
-
+      </div>
+      <div className="about-content text-l">
         <div>
           <p>
             - Focused on improving coding skills and learning from experienced
