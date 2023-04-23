@@ -11,6 +11,11 @@ function Home() {
         <h1 className="text-2xl font-semibold text-white">
           Full-Stack Web Developer
         </h1>
+        <img
+          className=""
+          src={require("../images/black-and-white-pic.png")}
+          alt="Brodie Kime, black and white"
+        />
         <Button
           className="download mt-8"
           href={require("../Brodie-Kime-Resume.pdf")}
