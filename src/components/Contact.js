@@ -1,5 +1,3 @@
-import { Button } from "react-bootstrap";
-
 function Contact() {
   return (
     <div className="flex items-center justify-center h-screen">
@@ -13,8 +11,7 @@ function Contact() {
         >
           LinkedIn
         </a>
-
-        <h1 className="text-4xl font-bold mb-4 text-white">brodie.kime@gmail.com</h1>
+        <a className="text-4xl font-bold mb-4 text-white" href="mailto:brodie.kime@gmail.com">Email me @ brodie.kime@gmail.com</a>
       </div>
     </div>
   );
