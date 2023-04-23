@@ -91,21 +91,20 @@ body {
 
 #home h1 span {
   font-weight: bold;
-  background: linear-gradient(to right, blue, red);
+  background-image: linear-gradient(to right, blue, red);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 5s ease-in-out infinite;
+  color: transparent;
+  animation: gradient-animation 5s infinite;
+  -webkit-animation: gradient-animation 5s infinite; /* For Safari and other WebKit-based browsers */
 }
 
-@keyframes gradient {
+@keyframes gradient-animation {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    background-position: left;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: right;
   }
 }
 
