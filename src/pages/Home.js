@@ -12,7 +12,7 @@ function Home() {
           Full-Stack Web Developer
         </h1>
         <img
-          className=""
+          className="black-and-white-pic"
           src={require("../images/black-and-white-pic.png")}
           alt="Brodie Kime, black and white"
         />
