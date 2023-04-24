@@ -1,7 +1,15 @@
-function Navbar() {
+import { useEffect, useState } from 'react';
+
+function Navbar({ scrollPosition }) {
+  const [showColumnLayout, setShowColumnLayout] = useState(false);
+
+  useEffect(() => {
+    setShowColumnLayout(scrollPosition >= 200);
+  }, [scrollPosition]);
+
   return (
-    <nav id="navbar">
-      <a href={"#home"} className="flex items-center mr-6">
+    <nav id="navbar" className={showColumnLayout ? 'column-layout' : ''}>
+      <a href={"#home"} className="logo flex items-center mr-6">
         <img
           id="logo"
           src={require("../images/navbar-logo.png")}
@@ -10,7 +18,7 @@ function Navbar() {
       </a>
 
       <div id="navbar-right">
-        <div className="">
+        <div id="main-links">
           <a
             href={"#home"}
             exact
