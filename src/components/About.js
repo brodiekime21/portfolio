@@ -1,6 +1,13 @@
+import { useRef } from "react";
+import useIntersectionObserver from "./useIntersectionObserver";
+
 function About() {
+  const sectionRef = useRef(null);
+  const isVisible = useIntersectionObserver(sectionRef);
+  
   return (
-    <div className="boxes-about about-container">
+    <div       className={`home-container boxes-about about-container ${isVisible ? "fade-in" : "fade-out"}`}
+    ref={sectionRef}>
       <h1 className="font-bold">About Me</h1>
       <div className="about-box text-l">
         <div>
