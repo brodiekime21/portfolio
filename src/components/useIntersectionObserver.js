@@ -1,10 +1,11 @@
-// useIntersectionObserver.js
 import { useEffect, useState } from "react";
 
 const useIntersectionObserver = (elementRef) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const currentElement = elementRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -14,13 +15,13 @@ const useIntersectionObserver = (elementRef) => {
       { threshold: 0.1 }
     );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, [elementRef]);
