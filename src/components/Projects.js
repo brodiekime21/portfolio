@@ -22,7 +22,7 @@ function Projects() {
       ref={sectionRef}
     >
       <h1>Projects</h1>
-      <Slider {...settings}>
+      <Slider id="slider-center" {...settings}>
         <div id="samplewav">
           <img
             className="samplewav-logo"

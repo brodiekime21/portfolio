@@ -2,10 +2,16 @@ import { useEffect, useState } from 'react';
 
 function Navbar({ scrollPosition }) {
   const [showColumnLayout, setShowColumnLayout] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   useEffect(() => {
     setShowColumnLayout(scrollPosition >= 200);
   }, [scrollPosition]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav id="navbar" className={showColumnLayout ? 'column-layout' : ''}>
@@ -17,7 +23,15 @@ function Navbar({ scrollPosition }) {
         />
       </a>
 
-      <div id="navbar-right">
+      <button
+        id="hamburger-menu"
+        className={`hamburger ${showColumnLayout ? '' : 'hidden'}`}
+        onClick={toggleMenu}
+      >
+        &#9776;
+      </button>
+
+      <div id="navbar-right" className={`${(isMenuOpen && showColumnLayout) ? 'open' : (showColumnLayout ? 'hidden' : '')}`}>
         <div id="main-links">
           <a
             href={"#home"}
