@@ -24,9 +24,8 @@ function Projects() {
       ref={sectionRef}
     >
       <h1>Projects</h1>
-      <div className="slider-container">
       <Slider {...settings}>
-        <div id="samplewav" className="center-slides">
+        <div id="samplewav">
           <img
             className="samplewav-logo"
             src={require("../images/samplewav-logo.png")}
@@ -43,9 +42,9 @@ function Projects() {
             <div className="skill">CSS</div>
             <div className="skill">HTML</div>
           </div>
-          <p className="project-description">
-            <em>SampleWav</em> is a website that allows users to upload, browse,
-            and download music samples and functions as a social media site
+          <p>
+            <em>SampleWav</em> is a website that allows users to upload, browse, and
+            download music samples and functions as a social media site
             allowing profiles, followers, comments, and reposts.
           </p>
           <img
@@ -68,9 +67,9 @@ function Projects() {
             <div className="skill">CSS</div>
             <div className="skill">HTML</div>
           </div>
-          <p className="project-description">
-            <em>Best Fest</em> is a website that allows users to sign up, create
-            a profile, then rate, review, and comment on music festival
+          <p>
+            <em>Best Fest</em> is a website that allows users to sign up, create a
+            profile, then rate, review, and comment on music festival
             experiences.
           </p>
           <img
@@ -90,22 +89,21 @@ function Projects() {
             <div className="skill">HTML</div>
             <div className="skill">CSS</div>
             <div className="skill">Firebase</div>
-          </div>
-          <p className="project-description">
-            <em>Save The Rave</em> is a game that challenges players to save a
-            rave by collecting music notes while avoiding obstacles. The game
-            also features a leaderboard to track high scores.
-          </p>
-          <img
-            className="project-pics"
-            src={require("../images/save-the-rave.png")}
-            alt="Save The Rave game screenshot"
-          />
-        </div>
-      </Slider>
-      </div>
-    </div>
-  );
+</div>
+<p>
+<em>Save The Rave</em> is a game that challenges players to save a rave by
+collecting music notes while avoiding obstacles. The game also
+features a leaderboard to track high scores.
+</p>
+<img
+className="project-pics"
+src={require("../images/save-the-rave.png")}
+alt="Save The Rave game screenshot"
+/>
+</div>
+</Slider>
+</div>
+);
 }
 
 export default Projects;
