@@ -29,10 +29,8 @@ body {
   background-color: none;
   color: #4adedd;
   margin-top: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 #navbar-right {
@@ -219,7 +217,10 @@ h1 {
   font-size: 18px;
 }
 
-
+.project-pics{
+  width: 50vw;
+  border-radius: 15px;
+}
 
 #full-stack {
   font-size: 22px;
