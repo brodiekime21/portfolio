@@ -6,6 +6,7 @@ body {
   color: white;
   margin: 0 10px;
   font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -215,6 +216,14 @@ h1 {
   border: 2px solid #ccc;
   padding: 20px;
   font-size: 18px;
+}
+
+.project-logos {
+height:30px;
+}
+
+#projects-slider h2{
+font-size: 18px;
 }
 
 .project-pics{
