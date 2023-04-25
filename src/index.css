@@ -218,7 +218,12 @@ h1 {
 }
 
 .project-pics{
-  width: 50vw;
+  width: 60vw;
+  border-radius: 15px;
+}
+
+.rave-pics{
+  width: 40vw;
   border-radius: 15px;
 }
 
