@@ -163,6 +163,12 @@ body {
   border-radius: 15px;
 }
 
+.center-slides {
+  display: flex;
+  justify-content: center;
+}
+
+
 h1 {
   font-size: 48px;
   margin: 0;
@@ -218,23 +224,168 @@ h1 {
   font-size: 18px;
 }
 
-.project-logos {
-height:30px;
+.samplewav-logo {
+  width: 45vw;
+  margin-bottom: 80px;
 }
 
-#projects-slider h2{
-font-size: 18px;
+.best-fest-logo {
+  width: 10vw;
 }
+
+.save-the-rave-logo {
+  width: 25vw;
+}
+
+em{
+font-weight: 800;
+font-style: normal;
+}
+
 
 .project-pics{
-  width: 60vw;
+  width: 50vw;
   border-radius: 15px;
 }
 
-.rave-pics{
+.project-description {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.save-the-rave-pics{
   width: 40vw;
   border-radius: 15px;
 }
+
+
+.slick-slider {
+  margin: 40px auto;
+  width: 70%;
+  position: relative;
+}
+
+.slick-prev,
+.slick-next {
+position: absolute;
+top: 50%;
+font-size: 50px;
+color: #4adedd;
+background: transparent;
+border: none;
+outline: none;
+z-index: 1;
+}
+
+.slick-prev {
+left: -40px;
+transform: translateY(-50%);
+}
+
+.slick-next {
+right: -40px;
+transform: translateY(-50%);
+}
+
+.slick-prev:before,
+.slick-next:before {
+content: "";
+display: inline-block;
+width: 15px;
+height: 15px;
+transform: rotate(135deg);
+}
+
+.slick-prev:before {
+margin-right: 8px;
+}
+
+.slick-next:before {
+margin-left: 8px;
+}
+
+.slick-dots {
+position: absolute;
+bottom: -30px;
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.slick-dots li {
+list-style-type: none;
+margin: 0 4px;
+}
+
+.slick-dots li button {
+display: block;
+width: 50px;
+height: 50px;
+background-color: #4adedd;
+border: none;
+border-radius: 50%;
+outline: none;
+}
+
+.slick-dots li.slick-active button {
+background-color: #4adedd;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-logo {
+  width: 40vw;
+  margin-bottom: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.skill-box {
+  background-color: #4adedd;
+  color: #081427;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 40px;
+}
+
+/* Override slick-slide height */
+.slick-slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100% !important;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 20px 0px;
+}
+
+.skill {
+  background-color: #4adedd;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
 
 #full-stack {
   font-size: 22px;
