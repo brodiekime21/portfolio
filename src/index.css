@@ -241,6 +241,12 @@ display: flex;
 
 }
 
+.projects-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .skill {
   background-color: #4adedd;
   padding: 5px;
