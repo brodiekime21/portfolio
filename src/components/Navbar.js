@@ -64,6 +64,8 @@ function Navbar({ scrollPosition }) {
             href="https://www.linkedin.com/in/brodie-kime/"
             activeClassName="text-white"
             className="personal-links"
+            target="_blank"
+            rel="noreferrer"
           >
             <img
               className="icons"
@@ -76,6 +78,8 @@ function Navbar({ scrollPosition }) {
             href="https://github.com/brodiekime21"
             activeClassName="text-white"
             className="personal-links"
+            target="_blank"
+            rel="noreferrer"
           >
             <img
               className="icons"

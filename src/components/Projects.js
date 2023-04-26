@@ -29,6 +29,36 @@ function Projects() {
             src={require("../images/samplewav-logo.png")}
             alt="SampleWav logo"
           />
+          <div className="code-deployed-website-links">
+          <a
+            href="https://github.com/brodiekime21"
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/github-icon.png")}
+              alt="GitHub icon"
+            />
+            Code
+          </a>
+          <a
+            href="https://github.com/brodiekime21"
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/website-icon.png")}
+              alt="Website icon"
+            />
+            Deployed Website
+          </a>
+          </div>
           <div className="skills">
             <div className="skill">React</div>
             <div className="skill">Javascript</div>
@@ -57,6 +87,36 @@ function Projects() {
             src={require("../images/best-fest-logo.png")}
             alt="Best Fest logo"
           />
+          <div className="code-deployed-website-links">
+          <a
+            href="https://github.com/brodiekime21"
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/github-icon.png")}
+              alt="GitHub icon"
+            />
+            Code
+          </a>
+          <a
+            href="https://github.com/brodiekime21"
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/website-icon.png")}
+              alt="Website icon"
+            />
+            Deployed Website
+          </a>
+          </div>
           <div className="skills">
             <div className="skill">Node.js</div>
             <div className="skill">Express.js</div>
@@ -82,6 +142,36 @@ function Projects() {
             src={require("../images/save-the-rave-logo.png")}
             alt="Save The Rave logo"
           />
+          <div className="code-deployed-website-links">
+          <a
+            href="https://github.com/brodiekime21/project-1-the-game"
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/github-icon.png")}
+              alt="GitHub icon"
+            />
+            Code
+          </a>
+          <a
+            href="https://brodiekime21.github.io/project-1-the-game/" 
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/website-icon.png")}
+              alt="Website icon"
+            />
+            Deployed Website
+          </a>
+          </div>
           <div className="skills">
             <div className="skill">Javascript</div>
             <div className="skill">HTML</div>

@@ -75,6 +75,12 @@ body {
   margin-right: 6px;
 }
 
+.code-deployed-website-hyperlinks {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
 .personal-links:hover, .personal-links:focus{
   filter: brightness(0) invert(1);
 }
@@ -262,15 +268,17 @@ margin: 10px
 
 .samplewav-logo {
   width: 35vw;
-  margin-bottom: 41px;
+  margin-bottom: 30px;
 }
 
 .best-fest-logo {
   width: 8vw;
+  margin-bottom: 15px;
 }
 
 .save-the-rave-logo {
   width: 19vw;
+  margin-bottom: 15px;
 }
 
 
@@ -341,7 +349,7 @@ display: flex;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
-  margin: 30px 0px;
+  margin: 15px 0px;
 }
 
 .skills-about {
@@ -364,12 +372,21 @@ display: flex;
  font-size: 24px;
  font-weight: 800;
  text-align: center;
+ margin-bottom: px;
 }
 
 #experience-soft-skills-flex{
 display: flex;
 margin-bottom: 15px;
+ width: 100%;
 
+}
+
+.code-deployed-website-links{
+  color: #4adedd;
+  display: flex;
+  gap: 10px;
+  
 }
 
 em {
@@ -387,7 +404,7 @@ em {
 .project-description {
 width: 70%;
 text-align: justify;
-margin-bottom: 30px;
+margin-bottom: 20px;
 }
 
 #home,

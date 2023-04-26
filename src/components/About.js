@@ -25,9 +25,11 @@ function About() {
             <div className="skill-about">HTML</div>
             <div className="skill-about">CSS</div>
             <div className="skill-about">Tailwind CSS</div>
+            <div className="skill-about">Boostrap</div>
             <div className="skill-about">Cloudinary</div>
             <div className="skill-about">bcrypt</div>
             <div className="skill-about">MERN-stack</div>
+            <div className="skill-about">GitHub</div>
             <div className="skill-about">Canva</div>
 
           </div>
