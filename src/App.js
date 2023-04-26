@@ -33,7 +33,7 @@ const App = () => {
       <div>
         <Contact />
       </div>
-      <div id="footer">
+      <div>
         <Footer />
       </div>
     </div>

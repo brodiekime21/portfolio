@@ -21,7 +21,7 @@ function Projects() {
       className={` ${isVisible ? "fade-in" : "fade-out"}`}
       ref={sectionRef}
     >
-      <h1 id="projects-title">Projects</h1>
+      <h1>Projects</h1>
       <Slider id="slider-center" {...settings}>
         <div id="samplewav">
           <img
@@ -31,7 +31,7 @@ function Projects() {
           />
           <div className="code-deployed-website-links">
           <a
-            href="https://github.com/brodiekime21"
+            href="https://github.com/brodiekime21/SampleWAV-client"
             activeClassName="text-white"
             className="personal-links"
             target="_blank"
@@ -42,10 +42,24 @@ function Projects() {
               src={require("../images/github-icon.png")}
               alt="GitHub icon"
             />
-            Code
+            Client Code
           </a>
           <a
-            href="https://github.com/brodiekime21"
+            href="https://github.com/brodiekime21/SampleWAV-server"
+            activeClassName="text-white"
+            className="personal-links"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="code-deployed-website-hyperlinks"
+              src={require("../images/github-icon.png")}
+              alt="GitHub icon"
+            />
+            Server Code
+          </a>
+          <a
+            href="https://samplewav.netlify.app/"
             activeClassName="text-white"
             className="personal-links"
             target="_blank"
@@ -89,7 +103,7 @@ function Projects() {
           />
           <div className="code-deployed-website-links">
           <a
-            href="https://github.com/brodiekime21"
+            href="https://github.com/brodiekime21/project-2"
             activeClassName="text-white"
             className="personal-links"
             target="_blank"
@@ -103,7 +117,7 @@ function Projects() {
             Code
           </a>
           <a
-            href="https://github.com/brodiekime21"
+            href="https://bestfest.fly.dev/"
             activeClassName="text-white"
             className="personal-links"
             target="_blank"
@@ -176,7 +190,7 @@ function Projects() {
             <div className="skill">Javascript</div>
             <div className="skill">HTML</div>
             <div className="skill">CSS</div>
-            <div className="skill">Firebase</div>
+            <div className="skill">Canvas</div>
           </div>
           <p className="project-description">
             <em>Save The Rave</em> is a game that challenges players to save a
