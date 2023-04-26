@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 body {
   color: white;
   margin: 0 10px;
@@ -12,6 +17,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../src/images/background.png');
   background-size: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow: auto;
 }
 
 #logo {
@@ -30,8 +38,8 @@ body {
   background-color: none;
   color: #4adedd;
   margin-top: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 #navbar-right {
@@ -201,9 +209,15 @@ h1 {
   color: #4adedd;
 }
 
+#about-me-title{
+margin-bottom: 20px;
+font-weight: 800;
+}
+
+
 
 .about-container {
-  max-width: 900px;
+  width: 72vw;
   margin: 50px auto 250px auto;
   padding: 35px 50px 35px 50px;
   display: flex;
@@ -218,10 +232,7 @@ h1 {
   margin-top: 30px;
 }
 
-.about-content > div {
-  flex-basis: 40%;
-  margin-bottom: 20px;
-}
+
 
 .about-content p {
   font-size: 18px;
@@ -231,8 +242,22 @@ h1 {
 
 .about-box {
   border: 2px solid #ccc;
-  padding: 20px;
+  padding: 10px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
   font-size: 18px;
+}
+
+#about-me-text{
+  text-align: justify;
+}
+
+#about-me-text p{
+margin: 10px
+}
+
+#projects-title{
+  margin-bottom: 50px;
 }
 
 .samplewav-logo {
@@ -247,6 +272,7 @@ h1 {
 .save-the-rave-logo {
   width: 19vw;
 }
+
 
 #projects-slider h2{
 font-size: 18px;
@@ -271,13 +297,13 @@ display: flex;
 
 
 .slick-dots li button:before {
-  font-size: 30px;
+  font-size: 20px;
   color:#4adedd;
   margin-top: 40px;
 }
 
 .slick-dots li.slick-active button:before {
-  font-size: 30px;
+  font-size: 20px;
   color:#4adedd;
   margin-top: 40px;
 
@@ -303,6 +329,12 @@ display: flex;
   justify-content: center;
 }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .skill {
   background-color: #4adedd;
   padding: 5px;
@@ -312,6 +344,33 @@ display: flex;
   margin: 30px 0px;
 }
 
+.skills-about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skill-about {
+  background-color: #4adedd;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.experience-soft-skills-titles{
+ font-size: 24px;
+ font-weight: 800;
+ text-align: center;
+}
+
+#experience-soft-skills-flex{
+display: flex;
+margin-bottom: 15px;
+
+}
 
 em {
   font-size: 20px;
@@ -319,19 +378,11 @@ em {
   font-weight: 800;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
 #full-stack {
   font-size: 22px;
   margin-top: 10px;
   margin-left: 3px;
 }
-
-
 
 .project-description {
 width: 70%;
@@ -424,7 +475,7 @@ align-items: center;
 
 
 .hamburger {
-  font-size: 26px;
+  font-size: 36px;
   background-color: transparent;
   border: none;
   cursor: pointer;

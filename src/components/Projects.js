@@ -21,7 +21,7 @@ function Projects() {
       className={` ${isVisible ? "fade-in" : "fade-out"}`}
       ref={sectionRef}
     >
-      <h1>Projects</h1>
+      <h1 id="projects-title">Projects</h1>
       <Slider id="slider-center" {...settings}>
         <div id="samplewav">
           <img

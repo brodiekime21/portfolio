@@ -12,34 +12,41 @@ function About() {
       }`}
       ref={sectionRef}
     >
-      <h1 className="font-bold">About Me</h1>
-      <div>
-        <p>Experience in</p>
-        <p>React</p>
-        <p>Javascript</p>
-        <p>MongoDB</p>
-        <p>Express</p>
-        <p>NodeJS</p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Tailwind CSS</p>
-        <p>Cloudinary</p>
-        <p>bcrypt</p>
-        <p>MERN-stack</p>
-      </div>
-      <div>
-        <p>Soft Skills</p>
-        <p>Analytical Skills</p>
-        <p>Time Managment</p>
-        <p>Communication</p>
-        <p>Indepent Projects</p>
-        <p>Organizational Skills</p>
-        <p>Attention to Detail</p>
-        <p>Positive Work Environment</p>
+      <h1 id="about-me-title">About Me</h1>
+      <div id="experience-soft-skills-flex">
+        <div className="about-box">
+          <h2 className="experience-soft-skills-titles">Experience in</h2>
+          <div className="skills-about">
+            <div className="skill-about">React</div>
+            <div className="skill-about">Javascript</div>
+            <div className="skill-about">MongoDB</div>
+            <div className="skill-about">Express</div>
+            <div className="skill-about">NodeJS</div>
+            <div className="skill-about">HTML</div>
+            <div className="skill-about">CSS</div>
+            <div className="skill-about">Tailwind CSS</div>
+            <div className="skill-about">Cloudinary</div>
+            <div className="skill-about">bcrypt</div>
+            <div className="skill-about">MERN-stack</div>
+            <div className="skill-about">Canva</div>
+
+          </div>
+        </div>
+        <div className="about-box">
+          <h2 className="experience-soft-skills-titles">Soft Skills</h2>
+          <div className="skills-about">
+            <div className="skill-about">Analytical Skills</div>
+            <div className="skill-about">Time Managment</div>
+            <div className="skill-about">Communication</div>
+            <div className="skill-about">Indepent Projects</div>
+            <div className="skill-about">Organization</div>
+            <div className="skill-about">Attention to Detail</div>
+            <div className="skill-about">Teamwork</div>
+          </div>
+        </div>
       </div>
       <div className="about-box text-l">
-      
-        <div>
+        <div id="about-me-text">
           <p>
             Growing up at the intersection of music and technology, I developed
             a passion for innovation while witnessing music becoming
@@ -59,10 +66,14 @@ function About() {
           <p>
             In my past roles, I've demonstrated strong communication,
             analytical, and organizational skills—essential for success in web
-            development. My diverse background has honed my attention to detail,
-            time management, and capacity to overcome challenges using
-            innovative solutions. These skills and my passion for music and
-            innovation make me a valuable asset to any web development team.
+            development. My diverse background in the entertainment and service
+            industries has honed my attention to detail, time management, and
+            capacity to overcome challenges using innovative solutions. Driven
+            by a passion for music, technology, and connecting people, I am
+            dedicated to using my web development skills to create meaningful
+            experiences and positively impact the digital landscape, which is
+            the driving force of my career path and makes me a valuable asset to
+            any web development team that shares these goals.
           </p>
           <p>
             Committed to lifelong learning and bridging the gap between people
