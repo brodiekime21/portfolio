@@ -1,11 +1,11 @@
 function Footer() {
   return (
     <div id="footer">
-      <div>
+      <div id="footer-links">
         <a
           href="https://www.linkedin.com/in/brodie-kime/"
           activeClassName="text-white"
-          className="personal-links"
+          className="personal-links footer-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -19,7 +19,7 @@ function Footer() {
         <a
           href="https://github.com/brodiekime21"
           activeClassName="text-white"
-          className="personal-links"
+          className="personal-links footer-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -33,7 +33,7 @@ function Footer() {
         <a
           href="https://github.com/brodiekime21"
           activeClassName="text-white"
-          className="personal-links"
+          className="personal-links footer-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -45,7 +45,7 @@ function Footer() {
           Email
         </a>
       </div>
-    <h2>&copy;  2023, Built and designed by Brodie Kime</h2>
+      <h2>&copy; 2023, Built and designed by Brodie Kime</h2>
     </div>
   );
 }

@@ -7,6 +7,8 @@ body::-webkit-scrollbar {
   background: transparent;
 }
 
+
+
 body {
   color: white;
   margin: 0 10px;
@@ -20,6 +22,10 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow: auto;
+}
+
+::selection {
+  background: rgba(74, 222, 222, 0.7 );
 }
 
 #logo {
@@ -187,7 +193,7 @@ h1 {
 }
 
 #contact{
-  width: 72vw;
+  width: 60vw;
   margin: 300px auto 250px auto;
   display: flex;
   flex-direction: column;
@@ -203,45 +209,36 @@ h1 {
 .contact {
   font-size: 30px;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
   
 }
 
 .contact-button{
 
-    background-color: #4adedd;
-    color: #081427;
-    border: 2px solid #081427;
-    border-radius: 50px;
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
+  background-color: #4adedd;
+  color: #081427;
+  border: 2px solid #081427;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
 }
   
-  .contact-button:hover, .contact-button:focus {
-    background-color: #081427;
-    color: #4adedd;
-    border: 2px solid #4adedd;
-  }
-
-.contact:hover, .contact:focus{
-  color:#4adedd;
-}
-
-.linkedin-contact {
-  font-weight: 800;
-}
-
-.linkedin-contact:hover {
+.contact-button:hover, .contact-button:focus {
+  background-color: #081427;
   color: #4adedd;
+  border: 2px solid #4adedd;
 }
+
+
+
 
 #about-me-title{
-margin-bottom: 20px;
+margin-bottom: 30px;
 font-weight: 800;
 }
 
@@ -546,3 +543,19 @@ align-items: center;
   color: white;
 }
 
+#footer-links{
+  margin-bottom: 10px;
+  display: flex;
+  color: #4adedd;
+}
+
+.footer-link {
+  margin: 0px 10px;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
