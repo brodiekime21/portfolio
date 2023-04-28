@@ -19,7 +19,7 @@ function Projects() {
           <a
             href="https://github.com/brodiekime21/SampleWAV-client"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >
@@ -33,7 +33,7 @@ function Projects() {
           <a
             href="https://github.com/brodiekime21/SampleWAV-server"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >
@@ -47,7 +47,7 @@ function Projects() {
           <a
             href="https://samplewav.netlify.app/"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >
@@ -91,7 +91,7 @@ function Projects() {
           <a
             href="https://github.com/brodiekime21/project-2"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >
@@ -105,7 +105,7 @@ function Projects() {
           <a
             href="https://bestfest.fly.dev/"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >
@@ -145,7 +145,7 @@ function Projects() {
           <a
             href="https://github.com/brodiekime21/project-1-the-game"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >
@@ -159,7 +159,7 @@ function Projects() {
           <a
             href="https://brodiekime21.github.io/project-1-the-game/"
             activeClassName="text-white"
-            className="personal-links"
+            className="personal-links github-website-font"
             target="_blank"
             rel="noreferrer"
           >

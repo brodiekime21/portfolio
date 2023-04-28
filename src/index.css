@@ -387,6 +387,9 @@ em {
   justify-content: center;
 }
 
+.github-website-font {
+  font-size: 12px;
+}
 
 /* !!!CONTACT CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -549,3 +552,4 @@ em {
   align-items: center;
   margin-bottom: 12px;
 }
+
