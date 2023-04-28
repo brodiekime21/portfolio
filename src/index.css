@@ -7,33 +7,32 @@ body::-webkit-scrollbar {
   background: transparent;
 }
 
-
-
 body {
   color: white;
   margin: 0 10px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../src/images/background.png');
-  background-size: contain;
+  background-color: #081427;
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow: auto;
 }
 
 ::selection {
-  background: rgba(74, 222, 222, 0.7 );
+  background: rgba(74, 222, 222, 0.5 );
 }
+
+/* !!!NAVBAR CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #logo {
   width: 140px;
   margin-top: 10px;
 }
 
-#logo:hover {
+#logo:hover, #logo:focus {
   filter: brightness(0) invert(1);
 }
 
@@ -46,6 +45,11 @@ body {
   margin-top: 15px;
   padding-right: 25px;
   padding-left: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 #navbar-right {
@@ -81,20 +85,30 @@ body {
   margin-right: 6px;
 }
 
-.code-deployed-website-hyperlinks {
-  width: 24px;
-  height: 24px;
-  margin-right: 6px;
-}
 
 .personal-links:hover, .personal-links:focus{
   filter: brightness(0) invert(1);
 }
 
+/* !!!HOME CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 #home{
   display: flex;
   flex-direction: column;
   padding: 200px 120px 250px 120px;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #home h1 {
@@ -103,42 +117,29 @@ body {
   margin: 0;
 }
 
+#home h1 span {
+  background-image: linear-gradient(
+    -225deg,
+    #142C4F 0%,
+    #4adedd 29%,
+    transparent 67%,
+    white 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 800;
+}
+  
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
-}
-
-#home h1 span {
- background-image: linear-gradient(
-   -225deg,
-   #142C4F 0%,
-   #4adedd 29%,
-   transparent 67%,
-   white 100%
- );
- background-size: auto auto;
- background-clip: border-box;
- background-size: 200% auto;
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- animation: textclip 3s linear infinite;
- display: inline-block;
-     font-size: 70px;
-     font-weight: 800;
-}
-
-.home-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 50px;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .resume-download {
@@ -155,33 +156,35 @@ body {
   transition: all 0.3s ease-in-out;
   margin-top: 20px;
 }
-
+  
 .resume-download:hover {
   background-color: #081427;
   color: #4adedd;
   border: 2px solid #4adedd;
 }
 
+/* !!!ABOUT ME CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  
 .boxes{
   background-color: rgba(255, 255, 255, 0.55);
   padding: 20px;
   border-radius: 15px;
   text-align: center;
 }
-
+  
 .boxes-about{
   background-color: rgba(255, 255, 255, 0.6);
   padding: 5px;
   border-radius: 15px;
 }
-
+  
 h1 {
   font-size: 48px;
   margin: 0;
   padding: 0px;
   text-align: center;
 }
-
+  
 .black-and-white-pic {
   height:350px;
   width: 400px;
@@ -191,249 +194,210 @@ h1 {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
   filter: contrast(115%) brightness(110%);
 }
-
-#contact{
-  width: 60vw;
-  margin: 300px auto 250px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 1.5;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 5px 0px 30px 0px;
-  border-radius: 15px;
   
-}
-
-.contact {
-  font-size: 30px;
-  text-align: center;
-  margin: 10px;
+  .code-deployed-website-hyperlinks {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
   
-}
-
-.contact-button{
-
-  background-color: #4adedd;
-  color: #081427;
-  border: 2px solid #081427;
-  border-radius: 50px;
-  padding: 15px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: all 0.3s ease-in-out;
-}
   
-.contact-button:hover, .contact-button:focus {
-  background-color: #081427;
-  color: #4adedd;
-  border: 2px solid #4adedd;
-}
+  
+  
+  #about-me-title{
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+  
+  
+  
+  .about-container {
+    width: 72vw;
+    margin: 50px auto 250px auto;
+    padding: 35px 50px 35px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 75px;
+  }
+  
+  .about-box {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    font-size: 18px;
+  }
+  
+  #about-me-text{
+    text-align: justify;
+  }
+  
+  #about-me-text p{
+    margin: 10px
+  }
+  
+  /* !!!PROJECTS CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  .samplewav-logo {
+    width: 35vw;
+    margin-bottom: 30px;
+  }
+  
+  .best-fest-logo {
+    width: 8vw;
+    margin-bottom: 15px;
+  }
+  
+  .save-the-rave-logo {
+    width: 19vw;
+    margin-bottom: 15px;
+  }
 
-
-
-
-#about-me-title{
-margin-bottom: 30px;
-font-weight: 800;
-}
-
-
-
-.about-container {
-  width: 72vw;
-  margin: 50px auto 250px auto;
-  padding: 35px 50px 35px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-
-
-.about-content p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-left: 75px;
-}
-
-.about-box {
-  border: 2px solid #ccc;
-  padding: 10px;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-  font-size: 18px;
-}
-
-#about-me-text{
-  text-align: justify;
-}
-
-#about-me-text p{
-margin: 10px
-}
-
-
-
-.samplewav-logo {
-  width: 35vw;
-  margin-bottom: 30px;
-}
-
-.best-fest-logo {
-  width: 8vw;
-  margin-bottom: 15px;
-}
-
-.save-the-rave-logo {
-  width: 19vw;
-  margin-bottom: 15px;
-}
-
-
-#projects-slider h2{
-font-size: 18px;
-}
-
+  
 .project-pics{
-  width: 50vw;
+  width: 25vw;
   border-radius: 15px;
 }
-
-.save-the-rave-pics{
-  width: 35vw;
-  border-radius: 15px;
-}
-
-.slick-slider {
-  margin: 40px auto 40px auto;
-width: 70vw;
-display: flex;
-}
-
-
-
-.slick-dots li button:before {
-  font-size: 20px;
-  color:#4adedd;
-  margin-top: 40px;
-}
-
-.slick-dots li.slick-active button:before {
-  font-size: 20px;
-  color:#4adedd;
-  margin-top: 40px;
-
-}
-
-.slick-dots li {
-  margin-right:20px;
-  margin-left: 20px;
-}
-
-
-
-.slick-prev:before, .slick-next:before{
-  font-size: 30px;
-}
-
-
-
-
-.projects-slider {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.skill {
-  background-color: #4adedd;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 15px 0px;
-}
-
-.skills-about {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.skill-about {
-  background-color: #4adedd;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 5px 0px;
-}
-
-.experience-soft-skills-titles{
- font-size: 24px;
- font-weight: 800;
- text-align: center;
- margin-bottom: px;
-}
-
-#experience-soft-skills-flex{
-display: flex;
-margin-bottom: 15px;
- width: 100%;
-
-}
-
-.code-deployed-website-links{
-  color: #4adedd;
-  display: flex;
-  gap: 10px;
   
-}
+  .save-the-rave-pics{
+    width: 35vw;
+    border-radius: 15px;
+  }
+ 
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .skill {
+    background-color: #4adedd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0px;
+  }
+  
+  .skills-about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .skill-about {
+    background-color: #4adedd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0px;
+  }
+  
+  .experience-soft-skills-titles{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: px;
+  }
+  
+  #experience-soft-skills-flex{
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    
+  }
+  
+  .code-deployed-website-links{
+    color: #4adedd;
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  em {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+  }
+  
+  #full-stack {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+  
+  .project-description {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  #home,
+  #about,
+  #projects {
+    min-height: 800px;
+  }
 
-em {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-}
-
-#full-stack {
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 3px;
-}
-
-.project-description {
-width: 70%;
-text-align: justify;
-margin-bottom: 20px;
-}
-
-#home,
-#about,
-#projects {
-  min-height: 800px;
-}
-
-.fade-in {
+  #contact{
+      width: 60vw;
+      margin: 300px auto 250px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.5;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 5px 0px 30px 0px;
+      border-radius: 15px;
+      
+  }
+    
+  .contact {
+      font-size: 30px;
+      text-align: center;
+      margin: 10px;
+      
+   }
+    
+    .contact-button{
+      
+      background-color: #4adedd;
+      color: #081427;
+      border: 2px solid #081427;
+      border-radius: 50px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+    
+  .contact-button:hover, .contact-button:focus {
+    background-color: #081427;
+    color: #4adedd;
+    border: 2px solid #4adedd;
+  }
+  
+  .fade-in {
   opacity: 1;
   transition: opacity 0.7s ease-in;
 }
@@ -443,13 +407,7 @@ margin-bottom: 20px;
   transition: opacity 0.7s ease-out;
 }
 
-#navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  transition: all 0.3s ease-in-out;
-}
+
 
 .column-layout #navbar-right {
   flex-direction: column;
@@ -490,22 +448,65 @@ margin-bottom: 20px;
   opacity: 1;
 }
 
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 70vw;
+}
+
+.projects-side-by-side {
+  display: flex;
+
+}
+
+.project {
+  width: 10vw;
+}
+
+
+
 #samplewav {
   display: flex !important;
 flex-direction: column
 ;  align-items: center;
+margin: 20px 0px;
+border: 2px solid #ccc;
+padding: 20px;
+margin-left: 7.5px;
+margin-right: 7.5px;
+font-size: 18px;
+width: 60vw;
 }
 
 #best-fest {
 display: flex !important;
 flex-direction: column;
 align-items: center;
+margin: 20px 0px;
+border: 2px solid #ccc;
+padding: 20px;
+margin-left: 7.5px;
+margin-right: 7.5px;
+font-size: 18px;
+width: 60vw;
+
 }
 
 #save-the-rave{
   display: flex !important;
   flex-direction: column;
   align-items: center;
+  margin: 20px 0px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 18px;
+  width: 60vw;
+
 }
 
 
