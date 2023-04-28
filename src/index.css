@@ -25,6 +25,16 @@ body {
   background: rgba(74, 222, 222, 0.5 );
 }
 
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
 /* !!!NAVBAR CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #logo {
@@ -89,6 +99,17 @@ body {
 .personal-links:hover, .personal-links:focus{
   filter: brightness(0) invert(1);
 }
+
+/* !!!HAMBURGER/COLUMN CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#hamburger-menu:hover {
+  color: white;
+}
+
+
+
+
+
 
 /* !!!HOME CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -195,219 +216,213 @@ h1 {
   filter: contrast(115%) brightness(110%);
 }
   
-  .code-deployed-website-hyperlinks {
-    width: 24px;
-    height: 24px;
-    margin-right: 6px;
-  }
+.code-deployed-website-hyperlinks {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+  
+#about-me-title{
+  margin-bottom: 30px;
+  font-weight: 800;
+}
   
   
   
+.about-container {
+  width: 72vw;
+  margin: 50px auto 250px auto;
+  padding: 35px 50px 35px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  #about-me-title{
-    margin-bottom: 30px;
-    font-weight: 800;
-  }
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+   
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 75px;
+}
   
+.about-box {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 18px;
+}
   
+#about-me-text{
+  text-align: justify;
+}
   
-  .about-container {
-    width: 72vw;
-    margin: 50px auto 250px auto;
-    padding: 35px 50px 35px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .about-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
-  
-  
-  
-  .about-content p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-left: 75px;
-  }
-  
-  .about-box {
-    border: 2px solid #ccc;
-    padding: 10px;
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-    font-size: 18px;
-  }
-  
-  #about-me-text{
-    text-align: justify;
-  }
-  
-  #about-me-text p{
-    margin: 10px
-  }
+#about-me-text p{
+  margin: 10px
+}
   
   /* !!!PROJECTS CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   
-  .samplewav-logo {
-    width: 35vw;
-    margin-bottom: 30px;
-  }
+.samplewav-logo {
+  width: 35vw;
+  margin-bottom: 30px;
+}
   
-  .best-fest-logo {
-    width: 8vw;
-    margin-bottom: 15px;
-  }
+.best-fest-logo {
+  width: 8vw;
+  margin-bottom: 15px;
+}
   
-  .save-the-rave-logo {
-    width: 19vw;
-    margin-bottom: 15px;
-  }
-
+.save-the-rave-logo {
+  width: 19vw;
+  margin-bottom: 15px;
+}
   
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 70vw;
+}
+  
+.projects-side-by-side {
+  display: flex; 
+}
+  
+.project {
+  width: 10vw;
+}
+    
 .project-pics{
   width: 25vw;
   border-radius: 15px;
 }
   
-  .save-the-rave-pics{
-    width: 35vw;
-    border-radius: 15px;
-  }
+.save-the-rave-pics{
+  width: 35vw;
+  border-radius: 15px;
+}
  
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
   
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
+.skill {
+  background-color: #4adedd;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
   
-  .skill {
-    background-color: #4adedd;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 15px 0px;
-  }
+.skills-about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
   
-  .skills-about {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
+.skill-about {
+  background-color: #4adedd;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
   
-  .skill-about {
-    background-color: #4adedd;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 5px 0px;
-  }
+.experience-soft-skills-titles{
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: px;
+}
   
-  .experience-soft-skills-titles{
-    font-size: 24px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: px;
-  }
+#experience-soft-skills-flex{
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%; 
+}
   
-  #experience-soft-skills-flex{
-    display: flex;
-    margin-bottom: 15px;
-    width: 100%;
-    
-  }
+.code-deployed-website-links{
+  color: #4adedd;
+  display: flex;
+  gap: 10px; 
+}
   
-  .code-deployed-website-links{
-    color: #4adedd;
-    display: flex;
-    gap: 10px;
-    
-  }
+em {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+}
   
-  em {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-  }
+#full-stack {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 3px;
+}
   
-  #full-stack {
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 3px;
-  }
-  
-  .project-description {
-    text-align: justify;
-    margin-bottom: 20px;
-  }
-  
-  #home,
-  #about,
-  #projects {
-    min-height: 800px;
-  }
-
-  #contact{
-      width: 60vw;
-      margin: 300px auto 250px auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      line-height: 1.5;
-      background-color: rgba(255, 255, 255, 0.6);
-      padding: 5px 0px 30px 0px;
-      border-radius: 15px;
-      
-  }
-    
-  .contact {
-      font-size: 30px;
-      text-align: center;
-      margin: 10px;
-      
-   }
-    
-    .contact-button{
-      
-      background-color: #4adedd;
-      color: #081427;
-      border: 2px solid #081427;
-      border-radius: 50px;
-    padding: 15px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: all 0.3s ease-in-out;
-  }
-    
-  .contact-button:hover, .contact-button:focus {
-    background-color: #081427;
-    color: #4adedd;
-    border: 2px solid #4adedd;
-  }
-  
-  .fade-in {
-  opacity: 1;
-  transition: opacity 0.7s ease-in;
+.project-description {
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.7s ease-out;
+#home,
+#about,
+#projects {
+  min-height: 800px;
 }
 
+/* !!!CONTACT CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
+#contact{
+  width: 60vw;
+  margin: 300px auto 250px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px 0px 30px 0px;
+   border-radius: 15px;     
+}
+
+.contact {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;     
+}
+
+.contact-button{
+  background-color: #4adedd;
+  color: #081427;
+  border: 2px solid #081427;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+    
+.contact-button:hover, .contact-button:focus {
+  background-color: #081427;
+  color: #4adedd;
+  border: 2px solid #4adedd;
+}
 
 .column-layout #navbar-right {
   flex-direction: column;
@@ -442,57 +457,30 @@ h1 {
   align-items: flex-start;
 }
 
-
-.slick-prev:before, .slick-next:before{
-  color: #4adedd;
-  opacity: 1;
-}
-
-.projects{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 70vw;
-}
-
-.projects-side-by-side {
-  display: flex;
-
-}
-
-.project {
-  width: 10vw;
-}
-
-
-
 #samplewav {
   display: flex !important;
-flex-direction: column
-;  align-items: center;
-margin: 20px 0px;
-border: 2px solid #ccc;
-padding: 20px;
-margin-left: 7.5px;
-margin-right: 7.5px;
-font-size: 18px;
-width: 60vw;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 18px;
+  width: 60vw;
 }
 
 #best-fest {
-display: flex !important;
-flex-direction: column;
-align-items: center;
-margin: 20px 0px;
-border: 2px solid #ccc;
-padding: 20px;
-margin-left: 7.5px;
-margin-right: 7.5px;
-font-size: 18px;
-width: 60vw;
-
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 18px;
+  width: 60vw;
 }
 
 #save-the-rave{
@@ -506,11 +494,7 @@ width: 60vw;
   margin-right: 7.5px;
   font-size: 18px;
   width: 60vw;
-
 }
-
-
-
 
 .hamburger {
   font-size: 36px;
@@ -540,9 +524,9 @@ width: 60vw;
   display: block;
 }
 
-#hamburger-menu:hover {
-  color: white;
-}
+
+
+/* !!!FOOTER CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #footer-links{
   margin-bottom: 10px;
