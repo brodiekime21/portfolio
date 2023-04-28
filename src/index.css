@@ -21,6 +21,12 @@ body {
   overflow: auto;
 }
 
+#home,
+#about,
+#projects {
+  min-height: 800px;
+}
+
 ::selection {
   background: rgba(74, 222, 222, 0.5 );
 }
@@ -287,7 +293,6 @@ h1 {
 .projects{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;  
   width: 70vw;
 }
@@ -377,11 +382,11 @@ em {
   margin-bottom: 20px;
 }
 
-#home,
-#about,
-#projects {
-  min-height: 800px;
+#projects{
+  display: flex;
+  justify-content: center;
 }
+
 
 /* !!!CONTACT CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -466,8 +471,8 @@ em {
   padding: 20px;
   margin-left: 7.5px;
   margin-right: 7.5px;
-  font-size: 18px;
-  width: 60vw;
+  font-size: 16px;
+  width: 22vw;
 }
 
 #best-fest {
@@ -479,8 +484,8 @@ em {
   padding: 20px;
   margin-left: 7.5px;
   margin-right: 7.5px;
-  font-size: 18px;
-  width: 60vw;
+  font-size: 16px;
+  width: 22vw;
 }
 
 #save-the-rave{
@@ -492,8 +497,8 @@ em {
   padding: 20px;
   margin-left: 7.5px;
   margin-right: 7.5px;
-  font-size: 18px;
-  width: 60vw;
+  font-size: 16px;
+  width: 22vw;
 }
 
 .hamburger {
