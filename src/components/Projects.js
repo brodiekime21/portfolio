@@ -71,7 +71,7 @@ function Projects() {
           <div className="skill">HTML</div>
         </div>
         <p className="project-description">
-          <em>SampleWav</em> is a website that allows users to upload, browse,
+          <em>SampleWav</em>&nbsp;allows users to upload, browse,
           and download music samples and functions as a social media site
           allowing profiles, followers, comments, and reposts.
         </p>
@@ -126,7 +126,7 @@ function Projects() {
           <div className="skill">HTML</div>
         </div>
         <p className="project-description">
-          <em>Best Fest</em> is a website that allows users to sign up, create a
+          <em>Best Fest</em>&nbsp;allows users to sign up, create a
           profile, then rate, review, and comment on music festival experiences.
         </p>
         <img
@@ -178,9 +178,9 @@ function Projects() {
           <div className="skill">Canvas</div>
         </div>
         <p className="project-description">
-          <em>Save The Rave</em> is a game that challenges players to save a
-          rave by collecting music notes while avoiding obstacles. The game also
-          features a leaderboard to track high scores.
+          <em>Save The Rave</em> is a canvas game that challenges players to save a
+          rave by stopping distractions from getting to the DJ. The game also
+          features a soundtrack and a fun theme.
         </p>
         <img
           className="project-pics"
