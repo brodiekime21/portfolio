@@ -318,16 +318,18 @@ h1 {
 .skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 5px;
+  margin: 5px 0px;
 }
   
 .skill {
-  background-color: #4adedd;
+  border: 2px solid white;  
   padding: 5px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
-  margin: 15px 0px;
+  margin: 6px 0px;
 }
   
 .skills-about {
@@ -338,8 +340,8 @@ h1 {
 }
   
 .skill-about {
-  background-color: #4adedd;
-  padding: 5px;
+  border: 2px solid white;  
+    padding: 5px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
@@ -475,7 +477,7 @@ em {
   margin-left: 7.5px;
   margin-right: 7.5px;
   font-size: 16px;
-  width: 22vw;
+  width: 23vw;
 }
 
 #best-fest {
@@ -488,7 +490,7 @@ em {
   margin-left: 7.5px;
   margin-right: 7.5px;
   font-size: 16px;
-  width: 22vw;
+  width: 23vw;
 }
 
 #save-the-rave{
@@ -501,7 +503,7 @@ em {
   margin-left: 7.5px;
   margin-right: 7.5px;
   font-size: 16px;
-  width: 22vw;
+  width: 23vw;
 }
 
 .hamburger {
