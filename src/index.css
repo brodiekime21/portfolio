@@ -190,6 +190,16 @@ body {
   border: 2px solid #4adedd;
 }
 
+.black-and-white-pic {
+  height:350px;
+  width: 400px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 61px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
+  filter: contrast(115%) brightness(110%);
+}
+
 /* !!!ABOUT ME CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   
 .boxes{
@@ -212,15 +222,7 @@ h1 {
   text-align: center;
 }
   
-.black-and-white-pic {
-  height:350px;
-  width: 400px;
-  object-fit: cover;
-  object-position: top;
-  margin-top: 61px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
-  filter: contrast(115%) brightness(110%);
-}
+
   
 .code-deployed-website-hyperlinks {
   width: 24px;
@@ -568,6 +570,15 @@ em {
 
 @media (max-width: 991px) {
 
+  .black-and-white-pic {
+    height:233.33px;
+    width: 266.66px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 61px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
+    filter: contrast(115%) brightness(110%);
+  }
 
 
 }
@@ -575,6 +586,35 @@ em {
 
 @media (max-width: 767px) {
 
+.home-container {
+  flex-direction: column;
+  padding: 0px;
+}
 
+.black-and-white-pic {
+  height:233.33px;
+  width: 266.66px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 61px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
+  filter: contrast(115%) brightness(110%);
+}
 
 }
+
+@media (max-width: 526px) {
+
+
+  
+  .black-and-white-pic {
+    height:175px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 61px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
+    filter: contrast(115%) brightness(110%);
+  }
+  
+  }
