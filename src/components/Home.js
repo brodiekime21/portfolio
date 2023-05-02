@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Button } from "react-bootstrap";
 import useIntersectionObserver from "./useIntersectionObserver"
+ 
 
 
 function Home() {
@@ -28,9 +29,9 @@ function Home() {
         </Button>
       </div>
       <img
-        className="black-and-white-pic"
-        src={require("../images/black-and-white-pic.png")}
-        alt="Brodie Kime, black and white"
+        className="linkedin-pic"
+        src={require("../images/linkedin-pic.png")}
+        alt="Brodie Kime, business headshot"
       />
     </div>
   );

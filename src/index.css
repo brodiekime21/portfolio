@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 
 body {
   color: white;
-  margin: 0 10px;
+  margin: 0px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   font-weight: 500;
@@ -24,7 +24,7 @@ body {
 #home,
 #about,
 #projects {
-  min-height: 800px;
+  min-height: 400px;
 }
 
 ::selection {
@@ -85,12 +85,12 @@ body {
 
 #linkedin-github-navbar {
   display: flex;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .personal-links{
   font-size: 18px;
-  margin-left: 6px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
 }
@@ -122,14 +122,19 @@ body {
 #home{
   display: flex;
   flex-direction: column;
-  padding: 200px 120px 250px 120px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 240px;
+  padding-bottom: 180px;
 }
 
 .home-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     padding: 0 50px;
+    max-width: 1000px;
+    gap: 50px;
 }
 
 .text-container {
@@ -222,7 +227,11 @@ h1 {
   text-align: center;
 }
   
-
+.linkedin-pic {
+  width: 280px;
+  border: 5px solid white;
+  border-radius: 140px;
+}
   
 .code-deployed-website-hyperlinks {
   width: 24px;
@@ -570,15 +579,8 @@ em {
 
 @media (max-width: 991px) {
 
-  .black-and-white-pic {
-    height:233.33px;
-    width: 266.66px;
-    object-fit: cover;
-    object-position: top;
-    margin-top: 61px;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
-    filter: contrast(115%) brightness(110%);
-  }
+  /* need to make navbar change to hamburger-menu here */
+
 
 
 }
@@ -591,15 +593,7 @@ em {
   padding: 0px;
 }
 
-.black-and-white-pic {
-  height:233.33px;
-  width: 266.66px;
-  object-fit: cover;
-  object-position: top;
-  margin-top: 61px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
-  filter: contrast(115%) brightness(110%);
-}
+
 
 }
 
@@ -607,14 +601,5 @@ em {
 
 
   
-  .black-and-white-pic {
-    height:175px;
-    width: 200px;
-    object-fit: cover;
-    object-position: top;
-    margin-top: 61px;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 92.5%);
-    filter: contrast(115%) brightness(110%);
-  }
   
-  }
+}

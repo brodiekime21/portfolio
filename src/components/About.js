@@ -7,7 +7,7 @@ function About() {
 
   return (
     <div
-      className={`home-container boxes-about about-container ${
+      className={` boxes-about about-container ${
         isVisible ? "fade-in" : "fade-out"
       }`}
       ref={sectionRef}
