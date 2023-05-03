@@ -1,16 +1,8 @@
-import { useRef } from "react";
 import { Button } from "react-bootstrap";
-import useIntersectionObserver from "./useIntersectionObserver"
- 
-
-
-function Home() {
-  const sectionRef = useRef(null);
-  const isVisible = useIntersectionObserver(sectionRef);
+ function Home() {
 
   return (
-    <div className={`home-container ${isVisible ? "fade-in" : "fade-out"}`}
-    ref={sectionRef}
+    <div className="home-container"
     >
       <div className="text-container">
         <h1 className="">

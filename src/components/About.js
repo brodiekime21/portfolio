@@ -1,9 +1,6 @@
 function About() {
-
   return (
-    <div
-      className="boxes-about about-container"
-    >
+    <div className="boxes-about about-container">
       <h1 id="about-me-title">About Me</h1>
       <div id="experience-soft-skills-flex">
         <div className="about-box">
@@ -23,7 +20,6 @@ function About() {
             <div className="skill-about">MERN-stack</div>
             <div className="skill-about">GitHub</div>
             <div className="skill-about">Canva</div>
-
           </div>
         </div>
         <div className="about-box">

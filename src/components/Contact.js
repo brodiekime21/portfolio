@@ -1,13 +1,6 @@
-import { useRef } from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
-
 function Contact() {
-  const sectionRef = useRef(null);
-  const isVisible = useIntersectionObserver(sectionRef);
-
   return (
-    <div id="contact" className={`${isVisible ? "fade-in" : "fade-out"}`}
-      ref={sectionRef}>
+    <div id="contact">
       <p className="contact">Currently looking for new opportunities.<br></br>Click below to reach out.
       </p>
       <h1 className="contact">
