@@ -15,13 +15,7 @@ function Navbar({ scrollPosition }) {
 
   return (
     <nav id="navbar" className={showColumnLayout ? 'column-layout' : ''}>
-      <a href={"#home"} className="logo flex items-center mr-6">
-        <img
-          id="logo"
-          src={require("../images/navbar-logo.png")}
-          alt="Brodie Kime logo, the greater than symbol then B K then a forward slash followed by a less than symbol."
-        />
-      </a>
+
 
       <button
         id="hamburger-menu"

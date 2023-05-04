@@ -31,10 +31,10 @@ const App = () => {
         <Projects />
       </div>
       <div>
-        <Contact />
+        <Contact id="contact"/>
       </div>
       <div>
-        <Footer />
+        <Footer id="footer"/>
       </div>
     </div>
   );
