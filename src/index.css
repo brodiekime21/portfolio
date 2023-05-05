@@ -432,7 +432,7 @@ em {
 /* !!!HAMBURGER/COLUMN CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .column-layout #hamburger-menu {
-  display: block;
+  display: flex;
 }
 
 .column-layout #navbar-right {
@@ -466,6 +466,12 @@ em {
 .column-layout .logo{
   display: flex;
   align-items: flex-start;
+}
+
+#hamburger-menu {
+  position: fixed;
+  right: 20px;
+  top: 15px;
 }
 
 #hamburger-menu:hover {
@@ -504,12 +510,9 @@ em {
 @media (min-width: 1200px) {
 
 
-
 }
 
-
 @media (max-width: 991px) {
-
   #linkedin-github-navbar {
     display: flex;
     margin-left: 15px;
@@ -533,7 +536,6 @@ em {
     height: 20px;
     margin-right: 6px;
   }
-
 
 }
 
