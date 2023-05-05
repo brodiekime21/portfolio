@@ -2,18 +2,17 @@ import { Button } from "react-bootstrap";
  function Home() {
 
   return (
-    <div className="home-container"
-    >
-      <div className="text-container">
+
+      <div className="home-container">
       <img
         className="linkedin-pic"
         src={require("../images/linkedin-pic.png")}
         alt="Brodie Kime, business headshot"
       />
         <h1>
-          <div>
+          <div className="brodie-kime">
            Brodie Kime
-          </div>{" "}
+          </div>
           <div id="full-stack">Full-Stack Web Developer</div>
         </h1>
         <Button
@@ -21,10 +20,10 @@ import { Button } from "react-bootstrap";
           href={require("../Brodie-Kime-Resume.pdf")}
           download
         >
-          Resume
+          RESUME
         </Button>
       </div>
-    </div>
+
   );
 }
 

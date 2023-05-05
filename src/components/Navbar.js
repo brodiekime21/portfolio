@@ -6,7 +6,7 @@ function Navbar({ scrollPosition }) {
 
 
   useEffect(() => {
-    setShowColumnLayout(scrollPosition >= 140);
+    setShowColumnLayout(scrollPosition >= 60);
   }, [scrollPosition]);
 
   const toggleMenu = () => {
