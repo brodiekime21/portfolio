@@ -7,16 +7,11 @@
   justify-content: center;
 } */
 
-body::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
 
 body {
   color: white;
   margin: 0px;
   max-width: 1150px;
-
   font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   font-weight: 500;
@@ -28,26 +23,15 @@ body {
   overflow: auto;
 }
 
-#home,
-#about,
-#projects {
-  min-height: 400px;
+body::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
-
 ::selection {
   background: rgba(74, 222, 222, 0.5 );
 }
 
 /* !!!NAVBAR CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-#logo {
-  width: 140px;
-  margin-top: 10px;
-}
-
-#logo:hover, #logo:focus {
-  filter: brightness(0) invert(1);
-}
 
 #navbar {
   color: #4adedd;
@@ -56,20 +40,11 @@ body {
   padding-left: 25px;
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 100;
-  transition: all 0.3s ease-in-out;
 }
 
 #navbar-right {
   display: flex;
-  align-items: center;
-}
-
-.nav-links {
-  font-size: 26px;
-  margin-left: 15px;
-  font-weight: 600;
 }
 
 .nav-links:hover, .nav-links:focus{
@@ -79,6 +54,12 @@ body {
 #linkedin-github-navbar {
   display: flex;
   margin-left: 15px;
+}
+
+.nav-links {
+  font-size: 26px;
+  margin-left: 15px;
+  font-weight: 600;
 }
 
 .personal-links{
@@ -94,21 +75,9 @@ body {
   margin-right: 6px;
 }
 
-
 .personal-links:hover, .personal-links:focus{
   filter: brightness(0) invert(1);
 }
-
-/* !!!HAMBURGER/COLUMN CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-#hamburger-menu:hover {
-  color: white;
-}
-
-
-
-
-
 
 /* !!!HOME CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -125,8 +94,9 @@ body {
 
 .home-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: center;
     padding: 0 50px;
     max-width: 1000px;
     gap: 50px;
@@ -175,7 +145,6 @@ body {
   border: 2px solid #081427;
   border-radius: 50px;
   padding: 15px 30px;
-  text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
@@ -440,38 +409,7 @@ em {
   border: 2px solid #4adedd;
 }
 
-.column-layout #navbar-right {
-  flex-direction: column;
-  display: none;
-}
 
-.column-layout .nav-links,
-.column-layout .personal-links {
-  margin-left: 0;
-  margin-bottom: 15px;
-}
-
-.column-layout #linkedin-github-navbar,
-.column-layout #main-links{
-  display: flex;
-  flex-direction: column;
-  margin-left: 0;
-}
-
-.column-layout #linkedin-github-navbar .personal-links {
-  margin-top: 15px;
-}
-
-.column-layout .nav-links,
-.column-layout .personal-links {
-  text-align: right;
-  align-self: flex-end;
-}
-
-.column-layout .logo{
-  display: flex;
-  align-items: flex-start;
-}
 
 #samplewav {
   display: flex !important;
@@ -512,9 +450,72 @@ em {
   width: 23vw;
 }
 
+/* !!!FOOTER CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+#footer-links{
+  margin-bottom: 10px;
+  display: flex;
+  color: #4adedd;
+}
+
+.footer-link {
+  margin: 0px 10px;
+}
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* !!!HAMBURGER/COLUMN CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.column-layout #hamburger-menu {
+  display: block;
+}
+
+.column-layout #navbar-right {
+  flex-direction: column;
+  display: none;
+}
+
+.column-layout .nav-links,
+.column-layout .personal-links {
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.column-layout #linkedin-github-navbar,
+.column-layout #main-links{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.column-layout #linkedin-github-navbar .personal-links {
+  margin-top: 15px;
+}
+
+.column-layout .nav-links,
+.column-layout .personal-links {
+  text-align: right;
+  align-self: flex-end;
+}
+
+.column-layout .logo{
+  display: flex;
+  align-items: flex-start;
+}
+
+#hamburger-menu:hover {
+  color: white;
+}
+
 .hamburger {
   font-size: 36px;
   background-color: transparent;
+  color:#4adedd;
   border: none;
   cursor: pointer;
   outline: none;
@@ -536,31 +537,6 @@ em {
   padding: 10px;
 }
 
-.column-layout #hamburger-menu {
-  display: block;
-}
-
-
-
-/* !!!FOOTER CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-#footer-links{
-  margin-bottom: 10px;
-  display: flex;
-  color: #4adedd;
-}
-
-.footer-link {
-  margin: 0px 10px;
-}
-
-#footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
 
 
 /* !!!MEDIA QUERIES CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -574,8 +550,29 @@ em {
 
 @media (max-width: 991px) {
 
-  /* need to make navbar change to hamburger-menu here */
-
+  #linkedin-github-navbar {
+    display: flex;
+    margin-left: 15px;
+  }
+  
+  .nav-links {
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 600;
+  }
+  
+  .personal-links{
+    font-size: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
 
 
 }
@@ -583,10 +580,7 @@ em {
 
 @media (max-width: 767px) {
 
-.home-container {
-  flex-direction: column;
-  padding: 0px;
-}
+
 
 
 

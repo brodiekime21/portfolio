@@ -6,7 +6,7 @@ function Navbar({ scrollPosition }) {
 
 
   useEffect(() => {
-    setShowColumnLayout(scrollPosition >= 200);
+    setShowColumnLayout(scrollPosition >= 140);
   }, [scrollPosition]);
 
   const toggleMenu = () => {
@@ -14,9 +14,7 @@ function Navbar({ scrollPosition }) {
   };
 
   return (
-    <nav id="navbar" className={showColumnLayout ? 'column-layout' : ''}>
-
-
+    <nav className={showColumnLayout ? 'column-layout' : ''}>
       <button
         id="hamburger-menu"
         className={`hamburger ${showColumnLayout ? '' : 'hidden'}`}

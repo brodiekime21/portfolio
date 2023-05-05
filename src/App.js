@@ -20,7 +20,9 @@ const App = () => {
 
   return (
     <div>
+      <div id="navbar">
       <Navbar scrollPosition={scrollPosition} />
+      </div>
       <div id="home">
         <Home />
       </div>
