@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
 
 .personal-links{
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0px 40px 0px;
+  margin: 110px 0px 60px 0px;
 }
 
 .home-container{
@@ -315,7 +315,6 @@ em {
 }
   
 .project-description {
-  text-align: justify;
   margin-bottom: 20px;
 }
 
@@ -411,16 +410,6 @@ em {
 }
 
 /* !!!FOOTER CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-#footer-links{
-  margin-bottom: 10px;
-  display: flex;
-  color: #4adedd;
-}
-
-.footer-link {
-  margin: 0px 10px;
-}
 
 #footer{
   display: flex;
@@ -521,6 +510,29 @@ em {
     padding: 20px 35px;
   }
   
+  
+}
+
+
+@media (max-width: 767px) {
+
+  /* FONT SIZE CHANGE HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  
+  body {
+    color: white;
+    margin: 0px;
+    max-width: 1150px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #081427;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: auto;
+  }
+  
   #linkedin-github-navbar {
     display: flex;
     margin-left: 15px;
@@ -544,27 +556,6 @@ em {
     height: 20px;
     margin-right: 6px;
   }
-
-}
-
-
-@media (max-width: 767px) {
-
-  body {
-    color: white;
-    margin: 0px;
-    max-width: 1150px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 16px;
-    font-weight: 500;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #081427;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: auto;
-  }
-
   .about-container {
     max-width: 430px;
     padding: 20px 35px;
@@ -576,7 +567,9 @@ em {
     border-radius: 140px;
   }
 
-
+em {
+font-size: 16px;
+}
 
 
 }
