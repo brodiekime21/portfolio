@@ -73,6 +73,7 @@ body::-webkit-scrollbar {
 .personal-links{
   font-size: 18px;
   margin-left: 15px;
+  margin-bottom: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,12 +201,8 @@ h1 {
   font-size: 18px;
 }
   
-#about-me-text{
-  text-align: justify;
-}
-  
 #about-me-text p{
-  margin: 10px
+  margin: 12px 10px;
 }
   
   /* !!!PROJECTS CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -297,6 +294,12 @@ h1 {
 }
   
 .code-deployed-website-links{
+  color: #4adedd;
+  display: flex;
+  gap: 10px; 
+}
+
+.samplewav-deployed-website-links{
   color: #4adedd;
   display: flex;
   gap: 10px; 
@@ -497,20 +500,44 @@ em {
 
 @media (max-width: 1200px) {
   .about-container {
-    max-width: 900px;
+    max-width: 850px;
     padding: 35px 50px 35px 50px;
     
   }
+
+
+
+
 
 }
 
 @media (max-width: 1000px) {
   .about-container {
-    max-width: 650px;
+    max-width: 600px;
     padding: 20px 35px;
   }
   
-  
+  .projects-side-by-side {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #samplewav {
+    display: flex !important;
+    align-items: center;
+
+    font-size: 16px;
+    width: 600px;
+  }
+
+  #samplewav-code-links{
+    display: flex;
+  }
+
+
+
+
+
 }
 
 
@@ -519,18 +546,8 @@ em {
   /* FONT SIZE CHANGE HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   
   body {
-    color: white;
-    margin: 0px;
-    max-width: 1150px;
-    font-family: 'JetBrains Mono', monospace;
     font-size: 14px;
     font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: #081427;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow: auto;
   }
   
   #linkedin-github-navbar {
@@ -557,7 +574,7 @@ em {
     margin-right: 6px;
   }
   .about-container {
-    max-width: 430px;
+    max-width: 400px;
     padding: 20px 35px;
   }
 
@@ -571,13 +588,17 @@ em {
 font-size: 16px;
 }
 
+  .skill {
+    font-size: 12px;
+ 
+  }
 
 }
 
 @media (max-width: 526px) {
 
   .about-container {
-    max-width: 300px;
+    max-width: 280px;
     padding: 10px 15px;
   }
   

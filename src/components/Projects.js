@@ -9,7 +9,8 @@ function Projects() {
             src={require("../images/samplewav-logo.png")}
             alt="SampleWav logo"
           />
-          <div className="code-deployed-website-links">
+          <div className="samplewav-deployed-website-links">
+          <div id="samplewav-code-links">
             <a
               href="https://github.com/brodiekime21/SampleWAV-client"
               activeClassName="text-white"
@@ -38,6 +39,8 @@ function Projects() {
               />
               Server Code
             </a>
+            </div>
+            <div>
             <a
               href="https://samplewav.netlify.app/"
               activeClassName="text-white"
@@ -52,6 +55,7 @@ function Projects() {
               />
               Deployed Website
             </a>
+            </div>
           </div>
           <div className="skills">
             <div className="skill">React</div>
