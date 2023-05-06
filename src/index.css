@@ -516,10 +516,21 @@ em {
     max-width: 600px;
     padding: 20px 35px;
   }
+
+  #experience-soft-skills-flex{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%; 
+  }
   
   .projects-side-by-side {
     display: flex; 
     flex-direction: column;
+  }
+
+  .about-box{
+    margin-top: -2px;
   }
 
   #samplewav {
