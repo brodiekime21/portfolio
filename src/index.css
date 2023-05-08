@@ -920,3 +920,57 @@ font-size: 16px;
   }
 
 }
+
+@media (max-width: 410px) {
+
+
+  .about-container {
+    max-width: 250px;
+    padding: 10px 15px;
+  }
+
+  #contact{
+    width: 250px;
+  }
+
+  .projects{
+    max-width: 250px;
+  }
+
+  #samplewav{
+    width: 250px;
+  }
+
+  #best-fest{
+    width: 250px;
+
+  }
+
+  #save-the-rave{
+    width: 250px;
+  }
+
+  body {
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  html{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  
+  .brodie-kime{
+    font-size: 35px
+  }
+
+  #full-stack{
+    font-size: 18px;
+    word-wrap: normal;
+  }
+
+  .contact-button{
+    font-size: 14px;
+  }
+}
