@@ -207,30 +207,32 @@ h1 {
   
   /* !!!PROJECTS CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   
-.samplewav-logo {
-  width: 35vw;
-  margin-bottom: 30px;
-}
-  
-.best-fest-logo {
-  width: 8vw;
-  margin-bottom: 15px;
-}
-  
-.save-the-rave-logo {
-  width: 19vw;
-  margin-bottom: 15px;
-}
-  
 .projects{
   display: flex;
   flex-direction: column;
   align-items: center;  
-  width: 70vw;
+  width: 1150px;
 }
+
+.samplewav-logo {
+  width: 100%;
+  margin-bottom: 30px;
+}
+  
+.best-fest-logo {
+  width: 120px;
+  margin-bottom: 15px;
+}
+  
+.save-the-rave-logo {
+  width: 250px;
+  margin-bottom: 15px;
+}
+  
   
 .projects-side-by-side {
   display: flex; 
+  justify-content: center;
 }
   
 .project {
@@ -238,14 +240,11 @@ h1 {
 }
     
 .project-pics{
-  width: 25vw;
-  border-radius: 15px;
+  width: 100%;
+  border-radius: 10px;
 }
-  
-.save-the-rave-pics{
-  width: 35vw;
-  border-radius: 15px;
-}
+
+
  
 .skills {
   display: flex;
@@ -330,10 +329,49 @@ em {
   font-size: 14px;
 }
 
+#samplewav {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 16px;
+  width: 31%;
+}
+
+#best-fest {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 16px;
+  width: 31%;
+}
+
+#save-the-rave{
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  font-size: 16px;
+  width: 31%;
+}
+
 /* !!!CONTACT CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #contact{
-  width: 60vw;
+  width: 800px;
   margin: 70px auto 70px auto;
   display: flex;
   flex-direction: column;
@@ -371,46 +409,6 @@ em {
   border: 2px solid #4adedd;
 }
 
-
-
-#samplewav {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0px;
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-  font-size: 16px;
-  width: 23vw;
-}
-
-#best-fest {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0px;
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-  font-size: 16px;
-  width: 23vw;
-}
-
-#save-the-rave{
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0px;
-  border: 2px solid #ccc;
-  padding: 20px;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
-  font-size: 16px;
-  width: 23vw;
-}
 
 /* !!!FOOTER CSS STYLING!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -505,7 +503,14 @@ em {
     
   }
 
-
+  #contact{
+    width: 600px;
+ 
+  }
+  
+  .contact {
+    font-size: 24px;    
+  }
 
 
 
@@ -517,10 +522,6 @@ em {
     padding: 35px 50px 35px 50px;
     
   }
-
-
-
-
 
 }
 
@@ -558,6 +559,37 @@ em {
     display: flex;
   }
 
+  #best-fest {
+    display: flex !important;
+    align-items: center;
+
+    font-size: 16px;
+    width: 600px;
+  }
+
+  #save-the-rave {
+    display: flex !important;
+    align-items: center;
+
+    font-size: 16px;
+    width: 600px;
+  }
+
+
+  .samplewav-logo {
+    width: 400px;
+    margin-bottom: 15px;
+  }
+    
+  .best-fest-logo {
+    width: 100px;
+    margin-bottom: 15px;
+  }
+    
+  .save-the-rave-logo {
+    width: 190px;
+    margin-bottom: 15px;
+  }
 
 
 
@@ -641,6 +673,15 @@ font-size: 16px;
  
   }
 
+  #contact{
+    width: 400px;
+ 
+  }
+  
+  .contact {
+    font-size: 18px;    
+  }
+
 }
 
 @media (max-width: 635px) {
@@ -648,6 +689,11 @@ font-size: 16px;
   .about-container {
     max-width: 340px;
     padding: 10px 15px;
+  }
+
+  #contact{
+    width: 340px;
+ 
   }
   
   
