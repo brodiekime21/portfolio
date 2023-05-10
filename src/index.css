@@ -506,7 +506,7 @@ em {
   }
 
   .projects {
-    max-width: 790px;
+    max-width: 1000px;
   }
 
   .samplewav-logo {
@@ -541,7 +541,7 @@ em {
   }
 
   .projects {
-    max-width: 680px;
+    max-width: 880px;
   }
 }
 
@@ -575,18 +575,18 @@ em {
 
   #samplewav {
     font-size: 16px;
-    width: 600px;
+    width: 815px;
   }
 
 
   #best-fest {
     font-size: 16px;
-    width: 600px;
+    width: 815px;
   }
 
   #save-the-rave {
     font-size: 16px;
-    width: 600px;
+    width: 815px;
   }
 
   .samplewav-logo {
@@ -621,16 +621,16 @@ em {
   }
 
   #samplewav{
-    width: 510px;
+    width: 700px;
   }
 
   #best-fest{
-    width: 510px;
+    width: 700px;
 
   }
 
   #save-the-rave{
-    width: 510px;
+    width: 700px;
   }
 
   .contact-button{
@@ -657,16 +657,16 @@ em {
   }
 
   #samplewav{
-    width: 460px;
+    width: 650px;
   }
 
   #best-fest{
-    width: 460px;
+    width: 650px;
 
   }
 
   #save-the-rave{
-    width: 460px;
+    width: 650px;
   }
 }
 
@@ -677,6 +677,10 @@ em {
   body {
     font-size: 14px;
     font-weight: 400;
+  }
+
+  h1{
+    font-size: 40px;
   }
   
   #linkedin-github-navbar {
@@ -723,20 +727,20 @@ em {
   }
 
   .projects{
-    max-width: 400px;
+    max-width: 530px;
   }
 
   #samplewav{
-    width: 400px;
+    width: 530px;
   }
 
   #best-fest{
-    width: 400px;
+    width: 530px;
 
   }
 
   #save-the-rave{
-    width: 400px;
+    width: 530px;
   }
 
   .linkedin-pic {
@@ -778,20 +782,20 @@ font-size: 16px;
   }
 
   .projects{
-    max-width: 340px;
+    max-width: 460px;
   }
 
   #samplewav{
-    width: 340px;
+    width: 460px;
   }
 
   #best-fest{
-    width: 340px;
+    width: 460px;
 
   }
 
   #save-the-rave{
-    width: 340px;
+    width: 460px;
   }
   
 }
@@ -802,6 +806,9 @@ font-size: 16px;
     font-size: 12px
   }
 
+  h1{
+    font-size: 30px;
+  }
 
   #navbar-right{
     display: flex;
@@ -823,32 +830,26 @@ font-size: 16px;
   }
 
   .projects{
-    max-width: 340px;
+    max-width: 365px;
   }
 
   #samplewav{
-    width: 340px;
+    width: 365px;
   }
 
   #best-fest{
-    width: 340px;
+    width: 365px;
 
   }
 
   #save-the-rave{
-    width: 340px;
+    width: 365px;
   }
 
   body {
     font-size: 12px;
     font-weight: 300;
   }
-
-  /* html{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 20px;
-  } */
   
 }
 
@@ -869,24 +870,24 @@ font-size: 16px;
   }
 
   #contact{
-    width: 290px;
+    width: 300px;
   }
 
   .projects{
-    max-width: 290px;
+    max-width: 300px;
   }
 
   #samplewav{
-    width: 290px;
+    width: 300px;
   }
 
   #best-fest{
-    width: 290px;
+    width: 300px;
 
   }
 
   #save-the-rave{
-    width: 290px;
+    width: 300px;
   }
 
   body {
@@ -914,24 +915,24 @@ font-size: 16px;
   }
 
   #contact{
-    width: 250px;
+    width: 225px;
   }
 
   .projects{
-    max-width: 250px;
+    max-width: 225px;
   }
 
   #samplewav{
-    width: 250px;
+    width: 225px;
   }
 
   #best-fest{
-    width: 250px;
+    width: 225px;
 
   }
 
   #save-the-rave{
-    width: 250px;
+    width: 225px;
   }
 
   body {
