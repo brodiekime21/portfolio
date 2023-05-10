@@ -156,8 +156,6 @@ h1 {
   text-align: center;
 }
   
-
-  
 .code-deployed-website-hyperlinks {
   width: 24px;
   height: 24px;
@@ -168,9 +166,7 @@ h1 {
   margin-bottom: 30px;
   font-weight: 800;
 }
-  
-  
-  
+    
 .about-container {
   max-width: 1150px;
   margin: 50px auto 80px auto;
@@ -229,7 +225,6 @@ h1 {
   margin-bottom: 15px;
 }
   
-  
 .projects-side-by-side {
   display: flex; 
   justify-content: center;
@@ -243,8 +238,6 @@ h1 {
   width: 100%;
   border-radius: 10px;
 }
-
-
  
 .skills {
   display: flex;
@@ -492,22 +485,20 @@ em {
   right: 20px;
   border-radius: 5px;
   padding: 10px;
+  background-color: rgba(8, 20, 39);
+  border: 3px solid white;
 }
-
-
 
 /* !!!MEDIA QUERIES CSS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 @media (max-width: 1200px) {
   .about-container {
-    max-width: 790px;
+    max-width: 1000px;
     padding: 35px 50px 35px 50px;
-    
   }
 
   #contact{
     width: 600px;
- 
   }
   
   .contact {
@@ -540,12 +531,11 @@ em {
     gap: 10px; 
     margin-left: 0px;
   }
-
 }
 
 @media (max-width: 1100px) {
   .about-container {
-    max-width: 680px;
+    max-width: 880px;
     padding: 35px 50px 35px 50px;
     
   }
@@ -553,16 +543,13 @@ em {
   .projects {
     max-width: 680px;
   }
-
 }
 
 @media (max-width: 1000px) {
   .about-container {
-    max-width: 620px;
+    max-width: 815px;
     padding: 20px 35px;
   }
-
-
 
   #experience-soft-skills-flex{
     display: flex;
@@ -581,6 +568,7 @@ em {
   .about-box{
     margin-top: -2px;
   }
+
   #samplewav-code-links{
     display: flex;
   }
@@ -601,7 +589,6 @@ em {
     width: 600px;
   }
 
-
   .samplewav-logo {
     width: 400px;
     margin-bottom: 15px;
@@ -616,17 +603,12 @@ em {
     width: 190px;
     margin-bottom: 15px;
   }
-
-
-
-
-
 }
 
 @media (max-width: 925px) {
 
   .about-container {
-    max-width: 510px;
+    max-width: 700px;
     padding: 20px 35px;
   }
 
@@ -650,7 +632,6 @@ em {
   #save-the-rave{
     width: 510px;
   }
-
 
   .contact-button{
 
@@ -658,14 +639,12 @@ em {
     padding: 10px 20px;
 
   }
-
-  
 }
 
 @media (max-width: 820px) {
 
   .about-container {
-    max-width: 460px;
+    max-width: 650px;
     padding: 20px 35px;
   }
 
@@ -690,8 +669,6 @@ em {
     width: 460px;
   }
 }
-
-
 
 @media (max-width: 767px) {
 
@@ -711,6 +688,10 @@ em {
     font-size: 34px;
     margin: 0px;
     margin-bottom: 5px;
+  }
+
+  #about-me-text {
+    font-size: 14px
   }
 
 
@@ -733,7 +714,7 @@ em {
     margin-right: 6px;
   }
   .about-container {
-    max-width: 400px;
+    max-width: 530px;
     padding: 20px 35px;
   }
 
@@ -788,7 +769,7 @@ font-size: 16px;
 @media (max-width: 635px) {
 
   .about-container {
-    max-width: 340px;
+    max-width: 460px;
     padding: 10px 15px;
   }
 
@@ -813,11 +794,14 @@ font-size: 16px;
     width: 340px;
   }
   
-
-  
 }
 
 @media (max-width: 572px) {
+
+  #about-me-text {
+    font-size: 12px
+  }
+
 
   #navbar-right{
     display: flex;
@@ -830,7 +814,7 @@ font-size: 16px;
   }
 
   .about-container {
-    max-width: 340px;
+    max-width: 365px;
     padding: 10px 15px;
   }
 
@@ -860,21 +844,27 @@ font-size: 16px;
     font-weight: 300;
   }
 
-  html{
+  /* html{
     display: flex;
     justify-content: flex-start;
     padding-left: 20px;
-  }
-  
-
+  } */
   
 }
 
 @media (max-width: 470px) {
 
+ .skill-about {
+  font-size: 12px;
+ }
+
+  .samplewav-deployed-website-links{
+    display: flex;
+    flex-direction: column;
+  }
 
   .about-container {
-    max-width: 280px;
+    max-width: 300px;
     padding: 10px 15px;
   }
 
@@ -903,12 +893,6 @@ font-size: 16px;
     font-size: 12px;
     font-weight: 300;
   }
-
-  html{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 10px;
-  }
   
   .brodie-kime{
     font-size: 35px
@@ -925,7 +909,7 @@ font-size: 16px;
 
 
   .about-container {
-    max-width: 250px;
+    max-width: 220px;
     padding: 10px 15px;
   }
 
@@ -955,11 +939,7 @@ font-size: 16px;
     font-weight: 300;
   }
 
-  html{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 10px;
-  }
+ 
   
   .brodie-kime{
     font-size: 35px
